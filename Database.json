@@ -1,0 +1,84 @@
+{
+  "users": {
+    "user_uuid_1": {
+      "name": "Julia Budiantari",
+      "email": "julia@example.com",
+      "password": "hashed_password",
+      "photo": "url_to_profile_photo",
+      "id_paket": "user_uuid_1_paket"
+    },
+    "user_uuid_2": {
+      "name": "Julia Budiantari",
+      "email": "julia@example.com",
+      "password": "hashed_password",
+      "photo": "url_to_profile_photo",
+      "id_paket": "user_uuid_2_paket"
+    }
+  },
+  "identifikasi_objek": {
+    "objek_uuid_1": {
+      "id_user": "user_uuid_1",
+      "name": "Object 1",
+      "deskripsi": "Description of Object 1",
+      "image": "url_to_image"
+    },
+    "objek_uuid_2": {
+      "id_user": "user_uuid_1",
+      "name": "Object 2",
+      "deskripsi": "Description of Object 2",
+      "image": "url_to_image"
+    }
+  },
+  "paket": {
+    "user_uuid_1_paket": {
+      "nama_paket": "Paket 1"
+    },
+    "user_uuid_2_paket": {
+      "nama_paket": "Paket 2"
+    }
+  },
+  "challenge": {
+    "challenge_uuid_1": {
+      "id_module": 1,
+      "name": "Challenge 1",
+      "deskripsi": "Description of Challenge 1",
+      "image": "url_to_image",
+      "level": "Easy",
+      "score": 100
+    },
+    "challenge_uuid_2": {
+      "id_module": 2,
+      "name": "Challenge 2",
+      "deskripsi": "Description of Challenge 2",
+      "image": "url_to_image",
+      "level": "Intermediate",
+      "score": 150
+    }
+  },
+  "modul": {
+    "modul_uuid_1": {
+      "name": "Modul 1",
+      "deskripsi": "Description of Modul 1",
+      "image": "url_to_image"
+    },
+    "modul_uuid_2": {
+      "name": "Modul 2",
+      "deskripsi": "Description of Modul 2",
+      "image": "url_to_image"
+    }
+  },
+    "objectHistory": {
+      "historyEntry1": {
+        "userId": "user123",
+        "objectName": "Cat",
+        "timestamp": "2023-01-01T12:00:00Z",
+        "imageUrl": "https://example.com/image1.jpg"
+      },
+      "historyEntry2": {
+        "userId": "user123",
+        "objectName": "Dog",
+        "timestamp": "2023-01-02T15:30:00Z",
+        "imageUrl": "https://example.com/image2.jpg"
+      }
+    }
+}
