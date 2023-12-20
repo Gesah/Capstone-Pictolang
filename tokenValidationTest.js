@@ -18,7 +18,7 @@ const verifyFirebaseToken = async (token) => {
 };
 
 // Contoh penggunaan fungsi untuk memvalidasi token
-const tokenToValidate = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJNQXNFcTYwY0hvYkMxNWQ3eFNkN081YjdFZ1QyIiwiaWF0IjoxNzAzMDM1ODY2LCJleHAiOjE3MDMwMzk0NjZ9.ZP_cefz0OIYEAwSK6rdUSujdvfInmSm1dkdiWgLgJA4'; // Gantilah dengan token yang akan divalidasi
+const tokenToValidate = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxNzAzMDM3Mzc0ODM3IiwiaWF0IjoxNzAzMDM3NTEyLCJleHAiOjE3MDMwNDExMTJ9.DroZDH1J2X1AKMvPqnG-podg-fZqHt7g7W5M9jEUKQk'; // Gantilah dengan token yang akan divalidasi
 verifyFirebaseToken(tokenToValidate)
   .then((decodedToken) => {
     // Lakukan tindakan setelah token divalidasi
