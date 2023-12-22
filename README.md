@@ -3,8 +3,8 @@
 # Project Name
 PictoLang - Pictographic Language
 
-# TEAM PROFILE
 # Team ID : CH2-PS358
+# TEAM PROFILE
 # This is our member
 1. (MD) A350BSY2163 – I Komang Gesah Indrada – Bumigora University - [Active]
 2. (MD) A009BSY2670 – Abdul Karim Maulana Afnan – Gunadarma University - [Active]
