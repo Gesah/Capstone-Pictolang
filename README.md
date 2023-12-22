@@ -6,4 +6,3 @@
 5. (ML) M594BSY0634 – Umbu Surya M. K. Tabuk – Respati Yogyakarta University - [Active]
 6. (CC) C014BSY4339 – Albert Yohan Firlandi – Udayana University - [Active]
 7. (CC) C014BSX3542 – Ni Made Julia Budiantari – Udayana University - [Active]
-![Logos](https://github.com/Gesah/Capstone-Pictolang/assets/59040643/1c8be284-83a7-4764-a4b0-16d06735a27f)
