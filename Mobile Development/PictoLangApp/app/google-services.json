@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "431466410516",
+    "firebase_url": "https://pictolang-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pictolang",
+    "storage_bucket": "pictolang.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431466410516:android:c62c804d4c84006199ed01",
+        "android_client_info": {
+          "package_name": "com.example.pictolangapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARZ5VDwge1MS6v-hioj-_gNrzLLwbr8FE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

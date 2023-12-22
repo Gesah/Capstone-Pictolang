@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="translate_languages">
+        <item>Indonesia</item>
+        <item>English</item>
+        <!-- Add more languages as needed -->
+    </array>
+
+</resources>

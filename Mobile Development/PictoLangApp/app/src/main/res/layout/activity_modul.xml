@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.challenge.modul.ModulActivity">
+
+    <ImageView
+        android:id="@+id/pic_module"
+        android:layout_width="239dp"
+        android:layout_height="219dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ayam" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pic_module"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:textStyle="bold"
+        android:text="Nama"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/isi_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="32dp"
+        android:text="@string/ayam"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isi_nama"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="32dp"
+        android:textStyle="bold"
+        android:text="Deskripsi"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/isi_deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deskripsi"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="32dp"
+        android:text="@string/deskripsi"
+        android:textSize="14dp"/>
+
+    <Button
+        android:id="@+id/btn_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/isi_deskripsi"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="65dp"
+        android:text="Previous"
+        android:background="@drawable/button_dest"
+        android:clipToOutline="true"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/isi_deskripsi"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="65dp"
+        android:text="Next"
+        android:background="@drawable/button_dest"
+        android:clipToOutline="true"/>
+
+
+</RelativeLayout>

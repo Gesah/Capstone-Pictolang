@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.challenge.quiz.QuizActivity">
+
+    <ImageView
+        android:id="@+id/pic_quiz"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ayam"/>
+
+    <TextView
+        android:id="@+id/soal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pic_quiz"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="32dp"
+        android:textStyle="bold"
+        android:text="1. Pada gambar ini adalah ?"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/opsi_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ayam"
+        android:layout_below="@id/soal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@color/green"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/opsi_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Udang"
+        android:layout_below="@id/opsi_a"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@color/gray"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/opsi_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ikan"
+        android:layout_below="@id/opsi_b"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@color/gray"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/opsi_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kuda"
+        android:layout_below="@id/opsi_c"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@color/gray"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:layout_below="@id/opsi_d"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="64dp"
+        android:background="@drawable/button_dest"
+        android:clipToOutline="true"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/opsi_d"
+        android:layout_marginRight="64dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_dest"
+        android:clipToOutline="true"
+        android:layout_marginTop="64dp"
+        android:text="Next" />
+
+
+</RelativeLayout>

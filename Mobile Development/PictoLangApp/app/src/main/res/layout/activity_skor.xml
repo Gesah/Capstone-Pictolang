@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.challenge.SkorActivity">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:textStyle="bold"
+        android:text="Your Score"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/nilai_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="32dp"
+        android:layout_below="@id/score"
+        android:textColor="@color/green"
+        android:text="80"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/benar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="64dp"
+        android:layout_below="@id/nilai_score"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:text="Benar"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/nilai_benar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/benar"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/green"
+        android:text="8"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/salah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="64dp"
+        android:layout_below="@id/nilai_score"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:text="Salah"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/nilai_salah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="80dp"
+        android:layout_below="@id/salah"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/red"
+        android:text="2"
+        android:textSize="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/CV_Ucapan"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        card_view:cardBackgroundColor="@color/graymuda"
+        card_view:cardCornerRadius="0dp">
+
+        <TextView
+            android:id="@+id/Beginner_Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:text="Amazing! \n \n \n \n Selamat karena Anda telah menyelesaikan quiz ini"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CV_Ucapan"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_primary"
+        android:clipToOutline="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineSpacingExtra="3sp"
+        android:layout_marginTop="64dp"
+        android:text="Lanjut ke Level berikutnya" />
+
+</RelativeLayout>

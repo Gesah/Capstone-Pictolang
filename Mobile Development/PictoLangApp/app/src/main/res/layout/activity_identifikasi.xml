@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="35dp"
+    android:background="@color/white"
+    tools:context=".ui.identifikasi.IdentifikasiActivity">
+
+    <ImageView
+        android:id="@+id/img_detect"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/icon_hide_image"
+        android:layout_marginEnd="5dp" />
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/img_detect"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/button_dest"
+        android:clipToOutline="true"
+        android:drawableLeft="@drawable/iconfolder"
+        android:drawablePadding="3dp"
+        android:elevation="6dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/img_detect"
+        android:layout_gravity="center"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/btnGallery"
+        android:background="@drawable/button_dest"
+        android:clipToOutline="true"
+        android:drawableLeft="@drawable/iconcamera"
+        android:drawablePadding="3dp"
+        android:elevation="6dp" />
+
+    <TextView
+        android:id="@+id/namaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGallery"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:text="Nama"
+        android:fontFamily="@font/intermedium"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/namaInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namaLabel"
+        app:boxCornerRadiusBottomEnd="6dp"
+        app:boxCornerRadiusBottomStart="6dp"
+        app:boxCornerRadiusTopEnd="6dp"
+        app:boxCornerRadiusTopStart="6dp">
+
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtTranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namaInput"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:text="Translate"
+        android:fontFamily="@font/intermedium"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerTranslate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtTranslate"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/custom_spinner_background"
+        android:entries="@array/translate_languages" />
+
+
+</RelativeLayout>

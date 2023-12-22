@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        tools:context=".ui.home.HomeActivity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/ayam"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/txtNama"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:textSize="17sp"
+            android:fontFamily="@font/intersemibold"
+            android:layout_toEndOf="@+id/imgProfile"
+            android:text="Frenky"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/corusel"
+            android:layout_width="270dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/imgProfile"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pictographic"/>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/boxCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/corusel"
+            android:layout_marginTop="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardIdentifikasi"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/cardChallenge"
+                app:cardBackgroundColor="#F3A218"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Identification Object"
+                    android:padding="10dp"
+                    android:fontFamily="@font/intersemibold"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/iconfacescan" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardChallenge"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                app:cardBackgroundColor="#3D89DF"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Challenge Object"
+                    android:padding="10dp"
+                    android:fontFamily="@font/intersemibold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/iconpurchases" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardGame"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_below="@+id/cardIdentifikasi"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/cardChallenge"
+                app:cardBackgroundColor="@color/green"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Games for Object"
+                    android:padding="10dp"
+                    android:fontFamily="@font/intersemibold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="81dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/iconhumanvr" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardHistory"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                android:layout_below="@+id/cardChallenge"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                app:cardBackgroundColor="#98A2B3"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="History"
+                    android:padding="10dp"
+                    android:fontFamily="@font/intersemibold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/iconhumanface" />
+
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textPaket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/boxCard"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/intersemibold"
+            android:padding="10dp"
+            android:text="Upgrade your package"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPaket"
+            android:layout_width="270dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/textPaket"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            app:cardBackgroundColor="#667185"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upgrade now for unlock feature!"
+                android:padding="10dp"
+                android:fontFamily="@font/intersemibold"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Benefit"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/intersemibold"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:background="@drawable/iconar"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="45dp"
+                android:padding="10dp"
+                android:background="@drawable/iconbook"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="82dp"
+                android:padding="10dp"
+                android:background="@drawable/icongroup"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnHelp"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/black"
+        app:icon="@drawable/iconcall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/gray"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_navigation_menu" />
+
+
+</RelativeLayout>
