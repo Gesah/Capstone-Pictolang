@@ -13,3 +13,8 @@ PictoLang - Pictographic Language
 5. (ML) M594BSY0634 – Umbu Surya M. K. Tabuk – Respati Yogyakarta University - [Active]
 6. (CC) C014BSY4339 – Albert Yohan Firlandi – Udayana University - [Active]
 7. (CC) C014BSX3542 – Ni Made Julia Budiantari – Udayana University - [Active]
+
+# UI/UX FIGMA
+https://www.figma.com/file/diqLBydnqlykGqHhKthRVK/UI%2FUX-PictoLang?type=design&node-id=174%3A1275&mode=design&t=4WSh8bggHoQx3Y0y-1
+# WORKSPACE PICTOLANG PROJECT PLAN
+https://www.figma.com/file/hfMeSRRl3hKIQfda4pqjRN/Collab-PictoLang?type=whiteboard&node-id=0%3A1&t=QmRBlhYZ5utjUxbe-1
